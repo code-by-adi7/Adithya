@@ -1,0 +1,36 @@
+/* ============================================================
+   Footer Styles
+   ============================================================ */
+
+.footer {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-8);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-size: 0.85rem;
+  color: var(--color-text-subtle);
+}
+
+.copy strong {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.madeWith {
+  font-size: 0.8rem;
+  color: var(--color-text-subtle);
+}
+
+.madeWith span {
+  color: var(--color-accent);
+}

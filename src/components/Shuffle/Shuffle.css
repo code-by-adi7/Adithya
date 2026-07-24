@@ -1,0 +1,30 @@
+/*
+ * Shuffle component CSS
+ *
+ * Intentionally minimal — only layout/visibility/animation concerns.
+ * Font size, weight, color, and spacing come from the className prop
+ * passed by the consumer (e.g. Hero's styles.name).
+ */
+
+/* Parent wrapper — hidden until GSAP has split and is ready */
+.shuffle-parent {
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+  will-change: transform;
+  line-height: 1;
+  visibility: hidden;
+  cursor: default;
+}
+
+/* Revealed once GSAP fires */
+.shuffle-parent.is-ready {
+  visibility: visible;
+}
+
+/* Per-character overflow clip */
+.shuffle-char {
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+}

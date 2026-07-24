@@ -1,0 +1,96 @@
+/* ============================================================
+   Skills Section Styles
+   ============================================================ */
+
+.skills {
+  background-color: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ReactBits: background decoration placeholder */
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* --- Category Block --- */
+.category {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+}
+
+.categoryTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-6);
+}
+
+/* --- Skill Grid --- */
+.skillGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* --- Skill Chip --- */
+.skillChip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-4);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.skillChip:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent-dim);
+}
+
+/* ReactBits: replace .skillIcon with a ReactBits icon component or Lottie animation */
+.skillIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.skillName {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.skillChip:hover .skillName {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 480px) {
+  .category {
+    padding: var(--space-6);
+  }
+}
