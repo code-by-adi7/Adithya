@@ -18,22 +18,22 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'Project One',
+    title: 'Share-in-room',
     description:
-      'A brief description of what this project does, the problem it solves, and any interesting technical decisions you made while building it.',
+      'RoomShare is a modern, real-time file sharing application designed to make temporary file exchanges simple, secure, and collaborative.',
     tags: ['React', 'TypeScript', 'Node.js', 'MySQL'],
-    githubUrl: 'https://github.com/yourusername/project-one',
-    demoUrl: 'https://project-one.vercel.app',
-    imageAlt: 'Screenshot of Project One',
+    githubUrl: 'https://github.com/code-by-adi7/share-in-room',
+    demoUrl: 'https://share-in-room.netlify.app/',
+    imageAlt: '',
   },
   {
     id: 2,
-    title: 'Project Two',
+    title: 'AI-virtual mouse',
     description:
-      'A brief description of what this project does, the problem it solves, and any interesting technical decisions you made while building it.',
-    tags: ['Python', 'Flask', 'SQLite', 'HTML/CSS'],
-    githubUrl: 'https://github.com/yourusername/project-two',
-    demoUrl: 'https://project-two.vercel.app',
+      'Virtual Mouse is a Python-based computer vision project that replaces the physical mouse with real-time hand gesture recognition.',
+    tags: ['Python', 'opencv', 'mediapipe', 'pyautogui'],
+    githubUrl: 'https://github.com/code-by-adi7/virtual-mouse',
+    demoUrl: 'https://github.com/code-by-adi7/virtual-mouse',
     imageAlt: 'Screenshot of Project Two',
   },
 ];
