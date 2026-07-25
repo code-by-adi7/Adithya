@@ -10,9 +10,9 @@ import styles from './Contact.module.css';
 const CONTACT_INFO = {
   email: 'adicazz7@gmail.com',
   github: 'https://github.com/code-by-adi7',
-  linkedin: 'https://linkedin.com/in/yourusername',
+  linkedin: 'https://linkedin.com/in/adithya-adi7',
   githubHandle: '@code-by-adi7',
-  linkedinHandle: 'in/yourusername',
+  linkedinHandle: 'in/adithya-adi7',
 };
 
 /* ------------------------------------------------------------------ */
