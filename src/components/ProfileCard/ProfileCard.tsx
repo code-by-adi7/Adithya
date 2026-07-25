@@ -39,7 +39,7 @@ const adjust = (v: number, fMin: number, fMax: number, tMin: number, tMax: numbe
   round(tMin + ((tMax - tMin) * (v - fMin)) / (fMax - fMin));
 
 const ProfileCardComponent: React.FC<ProfileCardProps> = ({
-  avatarUrl = '',
+  avatarUrl = 'adi.png',
   iconUrl,
   grainUrl,
   innerGradient,

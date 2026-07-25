@@ -18,7 +18,7 @@ export default function About() {
               role="img"
               aria-label="Profile photo placeholder"
             >
-              <span className={styles.initials} aria-hidden="true">YN</span>
+              <span className={styles.initials} aria-hidden="true">ADI</span>
               {/* ReactBits: profile image / avatar component here */}
             </div>
           </div>

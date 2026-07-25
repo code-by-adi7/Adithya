@@ -2,6 +2,7 @@ import styles from './Hero.module.css';
 import LineWaves from '../LineWaves/LineWaves';
 import Shuffle from '../Shuffle/Shuffle';
 import DecryptedText from '../DecryptedText/DecryptedText';
+import TiltedCard from '../TiltedCard/TiltedCard';
 
 
 export default function Hero() {
@@ -104,16 +105,21 @@ export default function Hero() {
         {/* ════════════════════════════════════════════════════════════════════
             RIGHT COLUMN — visual placeholder
             ════════════════════════════════════════════════════════════════════ */}
-        <div className={styles.visualCol} aria-hidden="true">
-          <div className={styles.visualPlaceholder}>
-            {/* ReactBits: visual component goes here
-                e.g. <Threads />, <Orb />, <CodeBlock />, or a 3-D canvas.
-                This container is full-height of the section with rounded corners.
-                Remove the placeholder label once you drop a component in. */}
-            <span className={styles.visualHint}>
-              Visual component placeholder
-            </span>
-          </div>
+        <div className={styles.visualCol} aria-label="Profile photo">
+          <TiltedCard
+            imageSrc="public/adithya.png"
+            altText="Adithya — BCA Student & Full-Stack Developer"
+            captionText="Scroll down"
+            containerHeight="min(60vh, 480px)"
+            containerWidth="100%"
+            imageHeight="min(60vh, 480px)"
+            imageWidth="min(46vh, 360px)"
+            rotateAmplitude={18}
+            scaleOnHover={1.29}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={false}
+          />
         </div>
 
       </div>

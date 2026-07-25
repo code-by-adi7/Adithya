@@ -104,6 +104,7 @@ export default function BubbleMenu({
   /* Close menu when a pill link is clicked */
   const handleLinkClick = () => {
     setIsMenuOpen(false);
+    onMenuClick?.(false);
   };
 
   useEffect(() => {

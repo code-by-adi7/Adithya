@@ -170,37 +170,23 @@
 }
 
 /* ============================================================
-   RIGHT COLUMN — Visual placeholder
+   RIGHT COLUMN — ProfileCard
    ============================================================ */
 
 .visualCol {
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   min-height: min(60vh, 540px);
 }
 
+/* Unused placeholder styles kept for reference, remove if desired */
 .visualPlaceholder {
-  flex: 1;
-  border-radius: var(--radius-xl);
-  border: 1px dashed var(--color-border);
-  background: var(--color-surface);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  /* Subtle inner glow so the placeholder reads as a distinct zone */
-  box-shadow: inset 0 0 60px rgba(108, 99, 255, 0.04);
+  display: none;
 }
 
 .visualHint {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-text-subtle);
-  pointer-events: none;
-  user-select: none;
+  display: none;
 }
 
 /* ============================================================
