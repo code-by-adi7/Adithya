@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects';
 import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import CurvedLoop from './components/CurvedLoop/CurvedLoop';
 
 // ─── Navigation items ─────────────────────────────────────────────────────────
 // Each pill links to a section anchor. Hover colours cycle through accent shades.
@@ -85,6 +86,7 @@ function App() {
           <Education />
           <Contact />
         </main>
+        <CurvedLoop marqueeText="BUILT BY ADITHYA WITH REACT AND TYPESCRIPT✦" />
         <Footer />
       </div>
     </>

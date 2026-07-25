@@ -92,7 +92,7 @@ export default function Hero() {
               View Projects
             </a>
             <a
-              href="/resume.pdf"
+              href="/Adithya.pdf"
               download
               className={styles.ctaSecondary}
               aria-label="Download resume PDF"

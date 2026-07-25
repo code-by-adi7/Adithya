@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import styles from './About.module.css';
 import VariableProximity from '../VariableProximity/VariableProximity';
+import ShapeBlur from '../ShapeBlur/ShapeBlur';
 
 const BIO_1 =
   "Hey! I'm Adithya, a 2nd-year Bachelor of Computer Applications (BCA) student with a love for writing clean code and building things that actually work. I enjoy the full spectrum of software development — from designing intuitive UIs to diving into backend logic and database structures.";
@@ -19,6 +20,17 @@ export default function About() {
           {/* ---- Profile Image Column ---- */}
           <div className={styles.imageCol}>
             <div className={styles.imagePlaceholder}>
+              <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+                <ShapeBlur
+                  variation={0}
+                  pixelRatioProp={typeof window !== 'undefined' ? window.devicePixelRatio : 1}
+                  shapeSize={1.8}
+                  roundness={0.4}
+                  borderSize={0.1}
+                  circleSize={0.1}
+                  circleEdge={0.8}
+                />
+              </div>
               <img
                 src="/aa.jpg"
                 alt="Adithya"

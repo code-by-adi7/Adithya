@@ -56,20 +56,6 @@ export default function Projects() {
               className={styles.card}
               aria-label={`Project: ${project.title}`}
             >
-              {/* Project image / screenshot */}
-              <div className={styles.cardImage}>
-                {/* =====================================================
-                    ReactBits: replace this placeholder with an actual
-                    <img> tag or a ReactBits image reveal component.
-                    Example:
-                    <img src="/projects/project-one.png" alt={project.imageAlt} />
-                    ===================================================== */}
-                <span className={styles.imagePlaceholderText}>
-                  {/* ReactBits: project screenshot / image here */}
-                  Screenshot placeholder
-                </span>
-              </div>
-
               {/* Card body */}
               <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{project.title}</h3>

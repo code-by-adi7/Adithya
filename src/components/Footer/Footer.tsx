@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer} role="contentinfo">
       <div className={`container ${styles.inner}`}>
         <p className={styles.copy}>
-          &copy; {year} <strong>Your Name</strong>. All rights reserved.
+          &copy; {year} <strong>Adithya</strong>. All rights reserved.
         </p>
         <p className={styles.madeWith}>
           Built with <span>React</span> &amp; <span>TypeScript</span>
