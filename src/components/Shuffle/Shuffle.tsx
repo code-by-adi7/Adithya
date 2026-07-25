@@ -232,7 +232,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
             inner.setAttribute('data-final-y', String(finalY));
           }
 
-          if (colorFrom) (inner.style as React.CSSProperties & Record<string, string>).color = colorFrom;
+          if (colorFrom) (inner.style as unknown as Record<string, string>).color = colorFrom;
           wrappersRef.current.push(wrap);
         });
       };
@@ -403,7 +403,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
     [ready, className]
   );
 
-  const Tag = (tag || 'p') as keyof JSX.IntrinsicElements;
+  const Tag = (tag || 'p') as React.ElementType;
   return React.createElement(Tag, { ref: ref as React.Ref<HTMLElement>, className: classes, style: commonStyle }, text);
 };
 

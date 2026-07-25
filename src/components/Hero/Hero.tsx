@@ -3,10 +3,6 @@ import LineWaves from '../LineWaves/LineWaves';
 import Shuffle from '../Shuffle/Shuffle';
 import DecryptedText from '../DecryptedText/DecryptedText';
 
-// ─── Tech pills shown in the left column ─────────────────────────────────────
-const TECH_PILLS = [
-  'Python', 'Java', 'C++', 'JavaScript', 'TypeScript', 'React', 'MySQL',
-] as const;
 
 export default function Hero() {
   return (

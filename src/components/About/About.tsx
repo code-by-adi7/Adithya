@@ -32,7 +32,7 @@ export default function About() {
 
             <p className={styles.bio}>
               {/* Replace this paragraph with your actual bio */}
-              Hey! I'm <strong>Your Name</strong>, a 2nd-year Bachelor of
+              Hey! I'm <strong>Adithya</strong>, a 2nd-year Bachelor of
               Computer Applications (BCA) student with a love for writing clean
               code and building things that actually work. I enjoy the full
               spectrum of software development — from designing intuitive UIs to

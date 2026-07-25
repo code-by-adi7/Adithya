@@ -16,13 +16,10 @@ const EDUCATION: EducationItem[] = [
   {
     id: 1,
     degree: 'Bachelor of Computer Applications (BCA)',
-    institution: 'Your College Name Here',
-    duration: '2023 – 2026',
+    institution: 'Shree devi college of information science',
+    duration: '2025 – 2028',
     achievements: [
-      'Placeholder: Dean\'s List / CGPA achievement here',
-      'Placeholder: Relevant coursework (DSA, DBMS, Web Tech, OOP)',
-      'Placeholder: Club or event participation here',
-      'Placeholder: Any certification or award here',
+
     ],
   },
 ];
