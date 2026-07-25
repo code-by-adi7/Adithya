@@ -8,18 +8,12 @@ export default function About() {
 
           {/* ---- Profile Image Column ---- */}
           <div className={styles.imageCol}>
-            {/* =====================================================
-                ReactBits: replace this placeholder with your actual
-                profile photo or a ReactBits avatar / image component.
-                Example: <img src="/profile.jpg" alt="Your Name smiling" />
-                ===================================================== */}
-            <div
-              className={styles.imagePlaceholder}
-              role="img"
-              aria-label="Profile photo placeholder"
-            >
-              <span className={styles.initials} aria-hidden="true">ADI</span>
-              {/* ReactBits: profile image / avatar component here */}
+            <div className={styles.imagePlaceholder}>
+              <img
+                src="/aa.jpg"
+                alt="Adithya"
+                className={styles.profilePhoto}
+              />
             </div>
           </div>
 

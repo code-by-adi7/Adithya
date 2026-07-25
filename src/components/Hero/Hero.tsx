@@ -107,7 +107,7 @@ export default function Hero() {
             ════════════════════════════════════════════════════════════════════ */}
         <div className={styles.visualCol} aria-label="Profile photo">
           <TiltedCard
-            imageSrc="public/adithya.png"
+            imageSrc="adithya.png"
             altText="Adithya — BCA Student & Full-Stack Developer"
             captionText="Scroll down"
             containerHeight="min(60vh, 480px)"
