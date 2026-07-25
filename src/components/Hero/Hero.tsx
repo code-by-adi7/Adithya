@@ -88,7 +88,7 @@ export default function Hero() {
             <SpecularButton
               size="md"
               radius={8}
-              tint="#6c63ff"
+              tint="#696969ff"
               tintOpacity={0.8}
               blur={10}
               textColor="#ffffff"
