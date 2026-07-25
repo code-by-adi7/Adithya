@@ -3,6 +3,7 @@ import LineWaves from '../LineWaves/LineWaves';
 import Shuffle from '../Shuffle/Shuffle';
 import DecryptedText from '../DecryptedText/DecryptedText';
 import TiltedCard from '../TiltedCard/TiltedCard';
+import SpecularButton from '../SpecularButton/SpecularButton';
 
 
 export default function Hero() {
@@ -84,13 +85,26 @@ export default function Hero() {
 
           {/* CTA buttons */}
           <div className={styles.ctas}>
-            <a
-              href="#projects"
-              className={styles.ctaPrimary}
-              aria-label="Jump to Projects section"
+            <SpecularButton
+              size="md"
+              radius={8}
+              tint="#6c63ff"
+              tintOpacity={0.8}
+              blur={10}
+              textColor="#ffffff"
+              lineColor="#ffffff"
+              baseColor="#56565a"
+              intensity={1.2}
+              shineSize={15}
+              shineFade={30}
+              thickness={1.5}
+              speed={0.5}
+              onClick={() => {
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               View Projects
-            </a>
+            </SpecularButton>
             <a
               href="/Adithya.pdf"
               download

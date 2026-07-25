@@ -2,6 +2,8 @@ import React from 'react';
 import {
   SiPython, SiJavascript, SiTypescript, SiC, SiCplusplus, SiSharp,
   SiHtml5, SiCss, SiReact, SiMysql,
+  SiNodedotjs,
+  SiSupabase,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import styles from './Skills.module.css';
@@ -24,27 +26,29 @@ const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: '🧠 Languages',
     skills: [
-      { name: 'Python',      icon: <SiPython /> },
-      { name: 'Java',        icon: <FaJava /> },
-      { name: 'C',           icon: <SiC /> },
-      { name: 'C++',         icon: <SiCplusplus /> },
-      { name: 'C#',          icon: <SiSharp /> },
-      { name: 'JavaScript',  icon: <SiJavascript /> },
-      { name: 'TypeScript',  icon: <SiTypescript /> },
+      { name: 'Python', icon: <SiPython /> },
+      { name: 'Java', icon: <FaJava /> },
+      { name: 'C', icon: <SiC /> },
+      { name: 'C++', icon: <SiCplusplus /> },
+      { name: 'C#', icon: <SiSharp /> },
+      { name: 'JavaScript', icon: <SiJavascript /> },
+      { name: 'TypeScript', icon: <SiTypescript /> },
     ],
   },
   {
     title: '🌐 Web',
     skills: [
-      { name: 'HTML',   icon: <SiHtml5 /> },
-      { name: 'CSS',    icon: <SiCss /> },
-      { name: 'React',  icon: <SiReact /> },
+      { name: 'HTML', icon: <SiHtml5 /> },
+      { name: 'CSS', icon: <SiCss /> },
+      { name: 'React', icon: <SiReact /> },
+      { name: 'Node.js', icon: <SiNodedotjs /> },
     ],
   },
   {
     title: '🗄️ Database',
     skills: [
       { name: 'MySQL', icon: <SiMysql /> },
+      { name: 'Supabase', icon: <SiSupabase /> },
     ],
   },
 ];
