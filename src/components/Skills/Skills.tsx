@@ -7,6 +7,7 @@ import {
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import styles from './Skills.module.css';
+import BorderGlow from '../BorderGlow/BorderGlow';
 
 /* ------------------------------------------------------------------ */
 /* Skill data — edit names/icons here freely                           */
@@ -75,25 +76,32 @@ export default function Skills() {
 
         <div className={styles.categories}>
           {SKILL_CATEGORIES.map((category) => (
-            <div key={category.title} className={styles.category}>
+            <BorderGlow
+              key={category.title}
+              className={styles.category}
+              edgeSensitivity={30}
+              glowColor="268 100 76" /* Using an accent-like hue */
+              backgroundColor="#1a1a24" /* matching var(--color-surface) roughly */
+              borderRadius={16}
+              glowRadius={30}
+              glowIntensity={1.0}
+              coneSpread={25}
+              animated={true}
+              colors={['#0e0e0eff', '#ffffffff', '#59595cff']}
+            >
               <h3 className={styles.categoryTitle}>{category.title}</h3>
 
               <ul className={styles.skillGrid} role="list" aria-label={`${category.title} skills`}>
                 {category.skills.map((skill) => (
                   <li key={skill.name} className={styles.skillChip}>
-                    {/* =====================================================
-                        ReactBits: replace .skillIcon content with a
-                        ReactBits icon, Lottie animation, or custom SVG.
-                        ===================================================== */}
                     <span className={styles.skillIcon} aria-hidden="true">
                       {skill.icon}
-                      {/* ReactBits: skill icon component here */}
                     </span>
                     <span className={styles.skillName}>{skill.name}</span>
                   </li>
                 ))}
               </ul>
-            </div>
+            </BorderGlow>
           ))}
         </div>
       </div>
