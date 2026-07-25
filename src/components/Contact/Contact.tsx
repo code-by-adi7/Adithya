@@ -8,10 +8,10 @@ import styles from './Contact.module.css';
 /* ------------------------------------------------------------------ */
 
 const CONTACT_INFO = {
-  email:    'your.email@example.com',
-  github:   'https://github.com/yourusername',
+  email: 'adicazz7@gmail.com',
+  github: 'https://github.com/code-by-adi7',
   linkedin: 'https://linkedin.com/in/yourusername',
-  githubHandle:   '@yourusername',
+  githubHandle: '@code-by-adi7',
   linkedinHandle: 'in/yourusername',
 };
 
